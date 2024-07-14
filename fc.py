@@ -13,7 +13,7 @@ def send_post_request(api_key):
         'X-Api-Key': api_key
     }
     payload = {
-        'count': 8
+        'count': 500
     }
     response = requests.post(url, headers=headers, json=payload)
     return response.status_code
